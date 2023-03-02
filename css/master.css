@@ -1,0 +1,109 @@
+body {
+  color: #fff;
+  background-color: #272b30;
+  font-family: "Comfortaa", cursive;
+}
+/* ?======> navbar */
+.navbar {
+  background-color: rgb(58, 73, 123) !important;
+}
+.navbar-brand img {
+  width: 40px;
+}
+.nav-link,
+.navbar-brand {
+  color: #fff;
+}
+.nav-link {
+  font-size: 14px;
+}
+.nav-item .nav-link.active,
+.nav-item .nav-link:hover {
+  color: #09c !important;
+  transition: 0.5s;
+}
+
+/* !=======> card */
+.bg-foot {
+  background-color: #32383e;
+}
+.btn {
+  --bs-btn-padding-x: 0.5rem !important;
+  --bs-btn-padding-y: 0.15rem !important;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+.box {
+  font-size: 14px;
+}
+.head p {
+  font-size: 12px;
+}
+.box,
+.box img {
+  transition: transform 0.5s, filter 0.5s;
+}
+.box img {
+  filter: grayscale(100%);
+}
+.box:hover {
+  transform: scale(1.05);
+}
+.box:hover img {
+  filter: grayscale(0);
+}
+.box .foot {
+  font-size: 10px;
+}
+
+/* ?========> loading  */
+#load {
+  z-index: 9999999999999999999999;
+  background-color: #272b30;
+}
+.loading {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: relative;
+}
+@keyframes loooping {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loading::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border-left: 3px solid #fff;
+
+  animation: loooping 1s linear infinite;
+}
+.loading::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border-right: 3px solid orangered;
+  animation: loooping 1s linear infinite reverse;
+}
+
+/* ^============> details */
+#g-details {
+  z-index: 99955442145;
+  background-color: #272b30;
+}
+#g-desc {
+  font-size: 14px !important;
+}

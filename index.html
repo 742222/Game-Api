@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>todolist</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- loading section -->
+    <div
+      id="load"
+      class="d-flex align-items-center justify-content-center vh-100 w-100 position-fixed"
+    >
+      <div class="loading"></div>
+    </div>
+    <!-- details section -->
+    <section
+      id="g-details"
+      class="d-none align-items-center justify-content-center vh-100 w-100 position-fixed py-3 overflow-auto"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-between align-items-center">
+            <p class="fs-3 fw-bold mb-0">Details Game</p>
+            <button class="bg-transparent text-white border-0" id="g-close">
+              <i class="fas fa-x fa-fw"></i>
+            </button>
+          </div>
+          <div class="row g-2 gx-4">
+            <div class="col-md-4">
+              <img src="images/thumbnail.jpg" class="w-100" id="g-img" />
+            </div>
+            <div class="col-md-8">
+              <h4>Title : <span id="g-title">Enlisted</span></h4>
+              <p>
+                Category :
+                <span class="bg-info text-black p-1 rounded-2" id="g-category"
+                  >Shooter</span
+                >
+              </p>
+              <p>
+                Platform :
+                <span class="bg-info text-black p-1 rounded-2" id="g-platform"
+                  >Windows</span
+                >
+              </p>
+              <p>
+                Status :
+                <span class="bg-info text-black p-1 rounded-2" id="g-status"
+                  >Live</span
+                >
+              </p>
+              <p id="g-desc">
+                Get ready to command your own World War II military squad in
+                Gaijin and Darkflow Software’s squad-based shooter Enlisted.
+                Play as an infantry squad leader, tank crew, or even an aircraft
+                pilot in a game where everything from the uniforms and weapons
+                to the vehicles are designed with historical accuracy in mind.
+                In Enlisted, players can train an equip their squad with weapons
+                and other useful items before taking them into battle. Players
+                control one soldier in their squad at a time, and have the
+                ability to switch when a part of the squad has been defeated.
+                When one solider is under player control, the rest are
+                controlled by AI that obeys player orders. Players have access
+                to four different campaigns, each associated with a specific
+                real-world battle. In each instance the squads, weaponry,
+                vehicles and more will appropriately correspond to each location
+                and date. The game offers hundreds of realistic weapons as well
+                as vehicles that World War II buffs will be familiar with. As
+                for the squads, players have access to 12 different kinds of
+                specialists. In addition to the soldiers that spawn naturally,
+                players can recruit additional ones.
+              </p>
+              <button class="btn btn-warning" id="g-btn">show Game</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- header section -->
+    <header>
+      <div class="container">
+        <img src="images/wraper.png" alt="" class="img-fluid" />
+      </div>
+    </header>
+    <!-- nav section -->
+    <nav class="navbar container navbar-expand-lg sticky-top p-2 rounded-3">
+      <a class="navbar-brand">
+        <img src="images/logo-sm.png" class="img-fluid" />
+        <span>GAME REVIEWS </span>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="#"
+              data-category="mmorpg"
+              >MMORPG</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-category="shooter">SHOOTER</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-category="sailing">SAILING</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-category="permadeath"
+              >PERMADEATH</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-category="superhero">SUPERHERO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-category="pixel">PIXEL</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- main section -->
+    <main class="py-5">
+      <div class="container">
+        <div class="row g-4" id="dataContainer"></div>
+      </div>
+    </main>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/route.js"></script>
+  </body>
+</html>
